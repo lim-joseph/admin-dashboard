@@ -1,3 +1,17 @@
+/* Base */
+:root {
+    --black: #0D1117;
+    --light-grey: #161B22;
+    --light-grey2: #8B949E;
+    --purple: #703FC9;
+    --green: #3FB950;
+    --blue: #33B3AE;
+    --pink: #F778BA;
+
+    --gap: 1.5rem;
+    --border-rad-sml: 0.4rem;
+}
+
 /* Utility */
 .grid {
     display: grid;
@@ -16,21 +30,7 @@
 .nav,
 .header,
 .card {
-    border-radius: 0.4rem;
-}
-
-/* Base */
-:root {
-    --black: #0D1117;
-    --light-grey: #161B22;
-    --light-grey2: #8B949E;
-    --purple: #703FC9;
-    --green: #3FB950;
-    --blue: #33B3AE;
-    --pink: #F778BA;
-
-    --gap: 1.5rem;
-
+    border-radius: var(--border-rad-sml);
 }
 
 body {
@@ -60,7 +60,11 @@ a:visited {
 button {
     background-color: rgba(255, 255, 255, 0.678);
     border: none;
-    border-radius: 0.4rem;
+    border-radius: var(--border-rad-sml);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* Main layout */
@@ -71,7 +75,7 @@ html {
 body {
     min-height: 100%;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 
     padding: 2rem 2rem 0rem 2rem;
     gap: 1.5rem;
@@ -84,6 +88,7 @@ body {
 
     background-color: var(--light-grey);
     padding: 1rem;
+    gap: 2rem;
 }
 
 .header-row-1,
@@ -96,9 +101,18 @@ body {
     gap: 10rem;
 }
 
+.header-row-2>.right {
+    gap: 0.75rem;
+}
+
+.header button {
+    text-align: center;
+    width: 4rem;
+    padding: 0.4rem 0.8rem;
+}
+
 .search {
     flex: 2;
-    align-items: center;
 }
 
 .search>input {
