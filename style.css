@@ -1,0 +1,34 @@
+/* Utility */
+.container {
+    max-width: 1290px;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Base */
+:root {
+    --black: #0D1117;
+    --mid-grey: #0D1117;
+    --light-grey: #161B22;
+    --light-grey2: #8B949E;
+    --purple: #703FC9;
+    --green: #3FB950;
+    --blue: #33B3AE;
+    --pink: #F778BA;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: "Mona-Sans"; */
+    background-color: var(--black);
+    color: white;
+}
+
+/* Layout */
