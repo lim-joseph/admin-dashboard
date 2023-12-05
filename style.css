@@ -7,6 +7,11 @@
     display: flex;
 }
 
+.card {
+    background-color: pink;
+    border: 1px solid blue;
+}
+
 /* Base */
 :root {
     --black: #0D1117;
@@ -17,6 +22,8 @@
     --green: #3FB950;
     --blue: #33B3AE;
     --pink: #F778BA;
+
+    --gap: 1.5rem;
 
 }
 
@@ -54,6 +61,16 @@ body {
 
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 9fr;
+    gap: var(--gap);
+}
+
+.projects {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--gap);
+}
+
+.projects>.card {
+    height: 200px;
 }
 
 /* Header */
