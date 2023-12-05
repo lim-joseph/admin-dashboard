@@ -12,91 +12,115 @@
 		/>
 	</head>
 
-	<body>
-		<div class="container">
-			<!-- Header -->
-			<div class="header">
-				<div class="grid">
-					<!-- Row 1 -->
-					<div class="search">
-						<img src="#" alt="Magnifying glass" />
-						<input type="text" />
+	<body class="container grid">
+		<!-- Header -->
+		<div class="header grid">
+			<div class="header-row-1 flex">
+				<!-- Row 1 -->
+				<div class="search">
+					<img src="#" alt="Magnifying glass" />
+					<input type="text" />
+				</div>
+				<img src="#" alt="Bell" class="bell" />
+				<img src="#" alt="Profile picture" class="pfp-small" />
+				<p class="username">Username</p>
+			</div>
+			<!-- Row 2 -->
+			<div class="header-row-2 flex">
+				<img src="#" alt="Profile picture" class="pfp-large" />
+				<button>New</button>
+				<button>Upload</button>
+				<button>Share</button>
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<div class="nav grid">
+			<!-- Titles -->
+			<div class="title flex">
+				<img src="#" alt="Company logo" />
+				<h1>Dashboard</h1>
+			</div>
+			<!-- Nav -->
+			<nav>
+				<ul class="main-nav">
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+					<li>test</li>
+				</ul>
+				<ul class="other-nav">
+					<li>test1</li>
+					<li>test1</li>
+					<li>test1</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Main -->
+		<section class="main grid">
+			<!-- Headers -->
+			<h2>Your Projects</h2>
+			<h2>Announcements</h2>
+			<!-- Cards -->
+			<div class="projects">
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
 					</div>
-					<img src="#" alt="Bell" class="bell" />
-					<img src="#" alt="Profile picture" class="pfp-small" />
-					<p class="username">Username</p>
-
-					<!-- Row 2 -->
-					<img src="#" alt="Profile picture" class="pfp-large" />
-					<button>New</button>
-					<button>Upload</button>
-					<button>Share</button>
+				</div>
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
+					</div>
+				</div>
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
+					</div>
+				</div>
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
+					</div>
+				</div>
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
+					</div>
+				</div>
+				<div class="card grid">
+					<h3>Some title</h3>
+					<p>some text</p>
+					<div class="card-icons flex">
+						<button>btn1</button>
+						<button>btn2</button>
+						<button>btn3</button>
+					</div>
 				</div>
 			</div>
-
-			<!-- Sidebar -->
-			<div class="nav">
-				<div class="grid">
-					<!-- Titles -->
-					<div class="title">
-						<img src="#" alt="Company logo" />
-						<h1>Dashboard</h1>
-					</div>
-
-					<!-- Nav -->
-					<nav>
-						<ul class="main-nav">
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-						</ul>
-						<ul class="other-nav">
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
-			<!-- Main -->
-			<section class="main">
-				<!-- Headers -->
-				<h2>Your Projects</h2>
-				<h2>Annoucements</h2>
-
-				<!-- Cards -->
-				<div class="projects">
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-					<div class="card grid">
-						<h3>Some title</h3>
-						<p>some text</p>
-					</div>
-				</div>
-
-				<!-- Right bar -->
+			<!-- Right bar -->
+			<div class="main-right grid">
 				<div class="announcements card">
 					<ul>
 						<li>
@@ -113,29 +137,31 @@
 						</li>
 					</ul>
 				</div>
-
 				<!-- Trending -->
-				<div class="trending card">
-					<ul>
-						<li>
-							<h3>Some h3</h3>
-							<p>Some p</p>
-						</li>
-						<li>
-							<h3>Some h3</h3>
-							<p>Some p</p>
-						</li>
-						<li>
-							<h3>Some h3</h3>
-							<p>Some p</p>
-						</li>
-						<li>
-							<h3>Some h3</h3>
-							<p>Some p</p>
-						</li>
-					</ul>
+				<div class="trending">
+					<h2>Trending</h2>
+					<div class="trending card">
+						<ul>
+							<li>
+								<h3>Some h3</h3>
+								<p>Some p</p>
+							</li>
+							<li>
+								<h3>Some h3</h3>
+								<p>Some p</p>
+							</li>
+							<li>
+								<h3>Some h3</h3>
+								<p>Some p</p>
+							</li>
+							<li>
+								<h3>Some h3</h3>
+								<p>Some p</p>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	</body>
 </html>
