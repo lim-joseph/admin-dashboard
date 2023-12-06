@@ -2,7 +2,7 @@
 :root {
     --black: #0D1117;
     --light-grey: #161B22;
-    --light-grey2: #e5edff65;
+    --light-grey2: #e5edff3d;
     --purple: #703FC9;
     --green: #3FB950;
     --blue: #33B3AE;
@@ -76,8 +76,13 @@ a:hover {
     cursor: pointer;
 }
 
+*:hover {
+    transition: background-color 0.25s ease;
+}
+
 /* Main layout */
 html {
+    background-color: var(--black);
     height: 100%;
 }
 
@@ -146,6 +151,11 @@ body {
     padding: 0.4rem 0.8rem;
 }
 
+.header button:hover,
+.header a:hover {
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
 .search {
     flex: 2;
 }
@@ -199,8 +209,10 @@ body {
 .nav>nav {
     flex-direction: column;
     gap: 4rem;
+    width: 100%;
 }
 
+.main-nav,
 .other-nav {
     align-self: start;
 }
@@ -210,13 +222,25 @@ body {
     margin-right: 2rem;
 }
 
+.nav ul {
+    width: 100%;
+}
+
 .nav li {
-    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: var(--border-rad-sml);
 }
 
 .nav a {
     display: flex;
     align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.nav a:hover {
+    background-color: #e5edff09;
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    border-radius: var(--border-rad-sml);
 }
 
 /* Main */
@@ -250,6 +274,11 @@ body {
     gap: 1rem;
 }
 
+.card:hover {
+    cursor: pointer;
+    background-color: #e5edff44
+}
+
 .card h3 {
     font-size: 1.2rem;
 }
@@ -265,12 +294,18 @@ body {
 }
 
 .card-icons>button {
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.45rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+.card-icons>button:hover {
+    background-color: rgba(255, 255, 255, 0.164);
 }
 
 .card-icons img {
     opacity: 0.75;
-    width: 1.1rem;
+    width: 1.05rem;
 }
 
 /* Main right */
