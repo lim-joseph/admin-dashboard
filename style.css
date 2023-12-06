@@ -84,7 +84,7 @@ html {
 body {
     font-size: 15px;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: min-content 4fr;
 
     margin: 2rem;
     gap: 1.5rem;
@@ -279,16 +279,12 @@ body {
     grid-row: 2/3;
 
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
-.announcements {
-    grid-row: 1/2;
-    height: min-content;
-}
-
+.announcements,
 .trending {
-    grid-row: 2/3;
+    flex: 1;
 }
 
 .trending>h2 {
