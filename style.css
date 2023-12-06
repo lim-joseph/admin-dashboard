@@ -100,11 +100,23 @@ body {
 }
 
 .header-row-1 {
-    gap: 10rem;
+    gap: 15rem;
 }
 
 .header-row-2>.right {
     gap: 0.75rem;
+}
+
+.header-row-2 p {
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 400;
+}
+
+.header-row-2 span {
+    font-weight: 600;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 30px;
 }
 
 .header button {
@@ -127,7 +139,18 @@ body {
 
 .header button,
 .header input {
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(0, 0, 0, 0.247);
+    outline: 1px solid rgba(255, 255, 255, 0.137);
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.header input:focus {
+    outline-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 0.459);
+}
+
+.pfp-large {
+    width: 3rem;
 }
 
 /* Nav */
@@ -145,7 +168,11 @@ body {
 }
 
 .nav>.title {
-    gap: 0;
+    gap: 0.9rem;
+}
+
+.title>img {
+    width: 2.5rem;
 }
 
 .nav>nav {
@@ -157,14 +184,18 @@ body {
     align-self: start;
 }
 
-.nav img {
+.main-nav img,
+.other-nav img {
     margin-right: 2rem;
 }
 
 .nav li {
+    margin-bottom: 2rem;
+}
+
+.nav a {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 /* Main */
@@ -194,6 +225,10 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.829);
 }
 
 .card-icons {
