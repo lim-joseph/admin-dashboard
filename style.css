@@ -193,7 +193,6 @@ body {
 
     background-color: var(--light-grey);
     padding: 1.5rem;
-
 }
 
 .nav>.title {
@@ -234,14 +233,15 @@ body {
     align-items: center;
     padding: 1rem 0.5rem;
 
+    border: 1px solid #0000;
     transition: background-color 0.75s ease;
 }
 
 .nav a:hover {
     background-color: #e5edff09;
-    border: 1px solid rgba(255, 255, 255, 0.082);
     border-radius: var(--border-rad-sml);
 
+    /* border: 1px solid rgba(255, 255, 255, 0.082); */
     transition: background-color 0.75s ease;
 }
 
