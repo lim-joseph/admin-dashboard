@@ -3,10 +3,7 @@
     --black: #0D1117;
     --light-grey: #161B22;
     --light-grey2: #e5edff3d;
-    --purple: #703FC9;
-    --green: #3FB950;
-    --blue: #33B3AE;
-    --pink: #F778BA;
+    --purple: #6f3fc948;
 
     --gap: 1.5rem;
     --border-rad-sml: 0.4rem;
@@ -235,12 +232,16 @@ body {
     display: flex;
     align-items: center;
     padding: 1rem 0.5rem;
+
+    transition: background-color 0.75s ease;
 }
 
 .nav a:hover {
     background-color: #e5edff09;
     border: 1px solid rgba(255, 255, 255, 0.082);
     border-radius: var(--border-rad-sml);
+
+    transition: background-color 0.75s ease;
 }
 
 /* Main */
@@ -272,11 +273,17 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+
+    transition: all 0.5s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .card:hover {
     cursor: pointer;
-    background-color: #e5edff44
+    background-color: #e5edff44;
+
+    transition: all 0.5s ease;
+    box-shadow: 0 0 80px var(--purple);
 }
 
 .card h3 {
