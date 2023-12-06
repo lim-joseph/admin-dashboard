@@ -229,9 +229,11 @@ body {
 }
 
 .projects {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
     height: 10px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: min-content;
     gap: var(--gap);
 }
 
@@ -270,8 +272,19 @@ body {
 
 /* Main right */
 .main-right {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  
     grid-template-rows: 1fr 1fr;
-    gap: 3rem;
+}
+
+.announcements {
+    grid-row: 1/2;
+    height: min-content;
+}
+
+.trending {
+    grid-row: 2/3;
 }
 
 .trending>h2 {
