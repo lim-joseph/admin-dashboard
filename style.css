@@ -1,4 +1,4 @@
-/* Base */
+/* Var */
 :root {
     --black: #0D1117;
     --light-grey: #161B22;
@@ -31,6 +31,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 1, 0.6);
 }
 
+/* Base */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--black);
@@ -76,12 +77,16 @@ a:hover {
 }
 
 /* Main layout */
+html {
+    height: 100%;
+}
+
 body {
     font-size: 15px;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 20svh calc(75svh - 2rem);
+    grid-template-rows: 1fr 4fr;
 
-    padding: 2rem 2rem 0 2rem;
+    margin: 2rem;
     gap: 1.5rem;
 }
 
@@ -232,7 +237,6 @@ body {
     grid-column: 1/2;
     grid-row: 2/3;
 
-    height: 10px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--gap);
 }
@@ -255,7 +259,6 @@ body {
 }
 
 .card-icons {
-    margin-top: 1rem;
     margin-left: auto;
     justify-content: end;
     gap: 0.75rem;
@@ -274,8 +277,9 @@ body {
 .main-right {
     grid-column: 2/3;
     grid-row: 2/3;
-  
-    grid-template-rows: 1fr 1fr;
+
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .announcements {
