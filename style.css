@@ -70,7 +70,8 @@ button {
     border-radius: var(--border-rad-sml);
 }
 
-button:hover {
+button:hover,
+a:hover {
     cursor: pointer;
 }
 
@@ -259,5 +260,5 @@ body {
 
 .announcements>ul,
 .trending>ul {
-    gap: 1rem;
+    gap: 1.5rem;
 }
