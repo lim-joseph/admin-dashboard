@@ -274,6 +274,8 @@ body {
 .main-right {
     grid-column: 2/3;
     grid-row: 2/3;
+  
+    grid-template-rows: 1fr 1fr;
 }
 
 .announcements {
