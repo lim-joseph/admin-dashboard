@@ -89,7 +89,7 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content min-content;
 
-    margin: 2rem;
+    margin: 1rem max(5%, 10rem);
     gap: 1.5rem;
 }
 
