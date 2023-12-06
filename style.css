@@ -4,7 +4,8 @@
     --light-grey: #161B22;
     --light-grey2: #e5edff3d;
     --purple: #6f3fc948;
-
+    --green: rgba(38, 255, 0, 0.082);
+    --blue: #00f7ff18;
     --gap: 1.5rem;
     --border-rad-sml: 0.4rem;
 }
@@ -69,6 +70,11 @@ button {
     border-radius: var(--border-rad-sml);
 }
 
+a,
+button {
+    transition: background-color 0.5s ease;
+}
+
 button:hover,
 a:hover {
     cursor: pointer;
@@ -81,7 +87,7 @@ a:hover {
 /* Main layout */
 html {
     background-color: var(--black);
-    height: 100%;
+    height: 100%
 }
 
 body {
@@ -101,6 +107,13 @@ body {
     background-color: var(--light-grey);
     padding: 1.5rem;
     gap: 2rem;
+
+    transition: box-shadow 0.5s ease;
+}
+
+.header:hover {
+    transition: all 0.5s ease;
+    box-shadow: 0 0 100px var(--green);
 }
 
 .header-row-1,
@@ -193,6 +206,13 @@ body {
 
     background-color: var(--light-grey);
     padding: 1.5rem;
+
+    transition: box-shadow 0.5s ease;
+}
+
+.nav:hover {
+    box-shadow: 0 0 100px var(--blue);
+    transition: box-shadow 0.5s ease;
 }
 
 .nav>.title {
@@ -282,7 +302,7 @@ body {
 
 .card:hover {
     cursor: pointer;
-    background-color: #e5edff44;
+    background-color: #e5edff4f;
 
     transition: all 0.5s ease;
     box-shadow: 0 0 80px var(--purple);
