@@ -270,7 +270,7 @@ body {
 
 /* Main right */
 .main-right {
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 3rem;
 }
 
