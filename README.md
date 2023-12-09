@@ -9,3 +9,4 @@ Github inspired admin dashboard created using HTML, CSS
 [👉 Live Demo](https://mocchu.github.io/admin-dashboard/)
 
 <img src="img/sc.png" width="825" />
+<img src="img/sc-mobile.png" width="825" />
