@@ -2,7 +2,7 @@
 :root {
     --black: #0D1117;
     --light-grey: #161B22;
-    --light-grey2: #e5edff3d;
+    --light-grey2: #3d434d;
     --purple: #6f3fc948;
     --green: rgba(38, 255, 0, 0.082);
     --blue: #00f7ff18;
@@ -25,14 +25,22 @@
 .header,
 .card {
     border-radius: var(--border-rad-sml);
-    outline: 1px solid rgba(255, 255, 255, 0.158);
+    outline: 1px solid rgba(255, 255, 255, 0.178);
     box-shadow: 0 4px 8px rgba(0, 0, 1, 0.6);
 }
 
+.card {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 /* Base */
+html {
+    background-image: url(img/bg.webp);
+    background-position: 70% 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--black);
     color: white;
 }
 
@@ -113,7 +121,7 @@ body {
 
 .header:hover {
     transition: all 0.5s ease;
-    box-shadow: 0 0 100px var(--green);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.075);
 }
 
 .header-row-1,
@@ -191,6 +199,16 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 1, 0.459);
 }
 
+.pfp {
+    filter: none !important;
+    border-radius: 50%;
+}
+
+.pfp-small {
+    width: 1.5rem;
+    border-radius: 0.25rem;
+}
+
 .pfp-large {
     width: 3rem;
 }
@@ -202,7 +220,7 @@ body {
 
     flex-direction: column;
     align-items: start;
-    gap: 4rem;
+    gap: 2rem;
 
     background-color: var(--light-grey);
     padding: 1.5rem;
@@ -211,7 +229,7 @@ body {
 }
 
 .nav:hover {
-    box-shadow: 0 0 100px var(--blue);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.075);
     transition: box-shadow 0.5s ease;
 }
 
@@ -302,10 +320,10 @@ body {
 
 .card:hover {
     cursor: pointer;
-    background-color: #e5edff4f;
+    background-color: #444b57;
 
     transition: all 0.5s ease;
-    box-shadow: 0 0 80px var(--purple);
+    box-shadow: 0 0 130px var(--purple);
 }
 
 .card h3 {
