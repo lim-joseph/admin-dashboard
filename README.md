@@ -1,7 +1,5 @@
 # admin-dashboard
 
-The Odin Project - Project 5
-
 Github inspired admin dashboard created using HTML, CSS
 
 -   Focus on CSS grid & Mobile responsiveness
